@@ -10,7 +10,7 @@ const Nav = () => (
       <NavLink
         key={data.slug}
         exact
-        to={data.slug}
+        to={`/${data.slug}`}
       >
         {data.name}
       </NavLink>
