@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Header = () => (
+const Header = ({ displayForm }) => (
   <div id="header">
-    <p>Header</p>
+    <p>{displayForm}</p>
   </div>
 );
 

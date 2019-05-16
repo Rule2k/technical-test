@@ -2,7 +2,7 @@ import React from 'react';
 
 import Content from 'src/components/Content';
 import Form from 'src/containers/Form';
-import Header from 'src/components/Header';
+import Header from 'src/containers/Header';
 import Nav from 'src/components/Nav';
 
 import './app.scss';
