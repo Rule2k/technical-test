@@ -4,6 +4,8 @@ import Content from 'src/components/Content';
 import Form from 'src/containers/Form';
 import Header from 'src/containers/Header';
 import Nav from 'src/components/Nav';
+import { Route, Switch } from 'react-router-dom';
+import { selectDataBySlug } from 'src/data';
 
 import './app.scss';
 
@@ -14,7 +16,24 @@ const App = () => (
       <Form />
     </div>
     <div id="bottom">
-      <Content />
+      <Switch>
+        <Route
+          exact
+          path="/:slug"
+          render={({ match }) => {
+            const { slug } = match.params;
+            const data = selectDataBySlug(slug);
+            return (
+              <Content {...data} />
+            );
+          }}
+        />
+        <Route
+          exact
+          path="/"
+          component={Content}
+        />
+      </Switch>
       <Nav />
     </div>
   </div>

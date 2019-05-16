@@ -49,6 +49,8 @@
     "react": "*",
     "react-dom": "*",
     "react-redux": "^6.0.0",
+    "react-router": "^5.0.0",
+    "react-router-dom": "^5.0.0",
     "redux": "^4.0.1"
   }
 }
