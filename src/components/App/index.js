@@ -1,19 +1,23 @@
-/**
- * Npm import
- */
 import React from 'react';
 
-/**
- * Local import
- */
-import Example from 'src/containers/Example';
+import Content from 'src/components/Content';
+import Form from 'src/components/Form';
+import Header from 'src/components/Header';
+import Nav from 'src/components/Nav';
+
 import './app.scss';
 
-/**
- * Code
- */
 const App = () => (
-  <Example />
+  <div id="app">
+    <div id="top">
+      <Header />
+      <Content />
+    </div>
+    <div id="bottom">
+      <Form />
+      <Nav />
+    </div>
+  </div>
 );
 
 /**
