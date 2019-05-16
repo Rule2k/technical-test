@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Content from 'src/components/Content';
-import Form from 'src/components/Form';
+import Form from 'src/containers/Form';
 import Header from 'src/components/Header';
 import Nav from 'src/components/Nav';
 
@@ -11,10 +11,10 @@ const App = () => (
   <div id="app">
     <div id="top">
       <Header />
-      <Content />
+      <Form />
     </div>
     <div id="bottom">
-      <Form />
+      <Content />
       <Nav />
     </div>
   </div>

@@ -1,48 +1,24 @@
-/**
- * Initial State
- */
 const initialState = {
-  message: 'Hello',
-  clic: 0,
+  input: '',
 };
 
-/**
- * Types
- */
-const DO_SOMETHING = 'DO_SOMETHING';
+const INPUT_HAS_CHANGED = 'INPUT_HAS_CHANGED';
 
-/**
- * Traitements
- */
-
-/**
- * Reducer
- */
 const reducer = (state = initialState, action = {}) => {
   switch (action.type) {
-    case DO_SOMETHING:
+    case INPUT_HAS_CHANGED:
       return {
         ...state,
-        clic: state.clic + 1,
+        input: action.input,
       };
-
     default:
       return state;
   }
 };
 
-/**
- * Action Creators
- */
-export const doSomething = () => ({
-  type: DO_SOMETHING,
+export const inputChanged = input => ({
+  type: INPUT_HAS_CHANGED,
+  input,
 });
 
-/**
- * Selectors
- */
-
-/**
- * Export
- */
 export default reducer;
