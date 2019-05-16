@@ -1,8 +1,11 @@
 #header {
-  font-size: 2em;
+  font-size: 3em;
   font-weight: bold;
   & p {
+    margin-top: -2em;
     padding: .5em;
-    color: black;
+    color: white;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.473);
+    text-align: center;
   }
 } 
