@@ -4,11 +4,11 @@ import { connect } from 'react-redux';
 import Header from 'src/components/Header';
 
 
-const mapStateToProps = (state, ownProps) => ({
+const mapStateToProps = state => ({
   displayForm: state.displayForm,
 });
 
-const mapDispatchToProps = (dispatch, ownProps) => ({});
+const mapDispatchToProps = () => ({});
 
 const HeaderContainer = connect(
   mapStateToProps,

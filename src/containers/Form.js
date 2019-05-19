@@ -5,11 +5,11 @@ import Form from 'src/components/Form';
 
 import { inputChanged, formSent } from 'src/store/reducer';
 
-const mapStateToProps = (state, ownProps) => ({
+const mapStateToProps = state => ({
   input: state.input,
 });
 
-const mapDispatchToProps = (dispatch, ownProps) => ({
+const mapDispatchToProps = dispatch => ({
   inputChanged: (input) => {
     dispatch(inputChanged(input));
   },
